@@ -12,24 +12,20 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <ToastContainer
-        position="top-center"
-        style={{ width: "500px" }}
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        theme="colored"
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
-      <App />
-    </Provider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <ToastContainer
+      position="top-center"
+      style={{ width: "500px" }}
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      theme="colored"
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+    />
+    <App />
+  </Provider>
 );
-
-reportWebVitals();
